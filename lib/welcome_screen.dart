@@ -101,7 +101,7 @@ class WelcomeScreen extends StatelessWidget {
                     Get.toNamed(AppRoutes.signup);
                   },
                   child: const Text(
-                    'SIGN UP',
+                    'Create My Account',
                     style: TextStyle(
                       color: Color(0xFFFFFFFF),
                       fontWeight: FontWeight.bold,
@@ -132,7 +132,7 @@ class WelcomeScreen extends StatelessWidget {
                     Get.toNamed(AppRoutes.signin);
                   },
                   child: const Text(
-                    'SIGN IN',
+                    'Create Child Account',
                     style: TextStyle(
                       color: Color(0xFF1BA39C),
                       fontWeight: FontWeight.bold,
@@ -141,6 +141,33 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              const SizedBox(height: 20),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text(
+                    "Already have an account? ",
+                    style: TextStyle(
+                      color: Color(0xFF9CA0B0),
+                      fontSize: 14,
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      Get.toNamed(AppRoutes.signin);
+                    },
+                    child: const Text(
+                      "Sign in",
+                      style: TextStyle(
+                        color: Color(0xFF1BA39C),
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),

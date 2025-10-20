@@ -6,4 +6,6 @@ abstract class AppRoutes {
   static const successParentalVerification = '/successParentalVerification';
   static const personalVerification = '/personalVerification';
   static const successPersonalVerification = '/successPersonalVerification';
+  static const selfAssesment = '/selfAssesment';
+  static const targetSettings = '/targetSettings';
 }
