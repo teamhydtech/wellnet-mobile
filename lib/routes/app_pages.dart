@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:wellnet/pages/home_page.dart';
 import 'package:wellnet/target_settings/target-setting_screen.dart';
 import '../assesments/self-assesments_screen.dart';
 import '../auth/parental-email-verification_screen.dart';
@@ -21,5 +22,6 @@ class AppPages {
     GetPage(name: AppRoutes.successPersonalVerification, page: () => const successPersonalVerificationScreen()),
     GetPage(name: AppRoutes.selfAssesment, page: () => const SelfAssessmentScreen()),
     GetPage(name: AppRoutes.targetSettings, page: () => const TargetSettingsPage()),
+     GetPage(name: AppRoutes.home, page: () => const HomePage()),
   ];
 }
