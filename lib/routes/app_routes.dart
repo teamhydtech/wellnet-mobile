@@ -8,4 +8,5 @@ abstract class AppRoutes {
   static const successPersonalVerification = '/successPersonalVerification';
   static const selfAssesment = '/selfAssesment';
   static const targetSettings = '/targetSettings';
+  static const home = '/home';
 }
