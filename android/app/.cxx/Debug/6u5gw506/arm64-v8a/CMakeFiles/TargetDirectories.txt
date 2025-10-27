@@ -1,0 +1,2 @@
+E:/Hydtech/WELLNET/PROJECT-WELLNET/wellnet/android/app/.cxx/Debug/6u5gw506/arm64-v8a/CMakeFiles/edit_cache.dir
+E:/Hydtech/WELLNET/PROJECT-WELLNET/wellnet/android/app/.cxx/Debug/6u5gw506/arm64-v8a/CMakeFiles/rebuild_cache.dir

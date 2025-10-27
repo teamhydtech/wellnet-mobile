@@ -9,4 +9,8 @@ abstract class AppRoutes {
   static const selfAssesment = '/selfAssesment';
   static const targetSettings = '/targetSettings';
   static const home = '/home';
+  static const downtime = '/downtime';
+  static const applimit = '/applimit';
+  static const sleepschedule = '/sleepschedule';
+  static const digitalfreetime = '/digitalfreetime';
 }

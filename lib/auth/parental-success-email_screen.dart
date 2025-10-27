@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../routes/app_routes.dart';
+
 class successParentalVerificationScreen extends StatefulWidget {
   const successParentalVerificationScreen({super.key});
 
@@ -148,7 +150,7 @@ class _successParentalVerificationScreenState extends State<successParentalVerif
                     elevation: 3,
                   ),
                   onPressed: () {
-                    // TODO: handle next action
+                    Get.toNamed(AppRoutes.selfAssesment);
                   },
                   child: const Text(
                     'CONTINUE',

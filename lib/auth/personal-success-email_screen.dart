@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../routes/app_routes.dart';
+
 class successPersonalVerificationScreen extends StatefulWidget {
   const successPersonalVerificationScreen({super.key});
 
@@ -148,7 +150,7 @@ class _successPersonalVerificationScreenState extends State<successPersonalVerif
                     elevation: 3,
                   ),
                   onPressed: () {
-                    // TODO: handle next action
+                    Get.toNamed(AppRoutes.selfAssesment);
                   },
                   child: const Text(
                     'CONTINUE',

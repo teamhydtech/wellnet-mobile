@@ -1,5 +1,8 @@
 import 'package:get/get.dart';
-import 'package:wellnet/pages/home_page.dart';
+import 'package:wellnet/target_settings/app-limits_screen.dart';
+import 'package:wellnet/target_settings/digital-free-time_screen.dart';
+import 'package:wellnet/target_settings/down-time_screen.dart';
+import 'package:wellnet/target_settings/sleep-schedule_screen.dart';
 import 'package:wellnet/target_settings/target-setting_screen.dart';
 import '../assesments/self-assesments_screen.dart';
 import '../auth/parental-email-verification_screen.dart';
@@ -8,6 +11,7 @@ import '../auth/personal-email-verification_screen.dart';
 import '../auth/personal-success-email_screen.dart';
 import '../auth/sign-in_screen.dart';
 import '../auth/sign-up_screen.dart';
+import '../bindings/downtime_binding.dart';
 import '../welcome_screen.dart';
 import 'app_routes.dart';
 
@@ -22,6 +26,15 @@ class AppPages {
     GetPage(name: AppRoutes.successPersonalVerification, page: () => const successPersonalVerificationScreen()),
     GetPage(name: AppRoutes.selfAssesment, page: () => const SelfAssessmentScreen()),
     GetPage(name: AppRoutes.targetSettings, page: () => const TargetSettingsPage()),
-     GetPage(name: AppRoutes.home, page: () => const HomePage()),
+    // GetPage(name: AppRoutes.downtime, page: () => const DowntimePage()),
+    GetPage(
+      name: AppRoutes.downtime,
+      page: () => const DowntimePage(),
+      binding: DowntimeBinding(), // <- wajib ada
+    ),
+    GetPage(name: AppRoutes.applimit, page: () => const AppLimitsScreen()),
+    GetPage(name: AppRoutes.sleepschedule, page: () => const SleepScheduleScreen()),
+    GetPage(name: AppRoutes.digitalfreetime, page: () => const DigitalFreeTimePage()),
+
   ];
 }
